@@ -1,65 +1,139 @@
 import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <main className="min-h-screen bg-gray-50 text-gray-900">
+      <section className="max-w-5xl mx-auto px-6 py-16">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 text-center md:text-left">
+  <Image
+    src="/profile.jpg"
+    alt="Ayushi Baliyan"
+    width={180}
+    height={180}
+    className="rounded-full border-4 border-blue-500 shadow-lg object-cover"
+  />
+
+  <div>
+    <h1 className="text-5xl font-bold mb-4">
+      Ayushi Baliyan
+    </h1>
+
+    <h2 className="text-2xl text-blue-600 font-semibold mb-4">
+      Frontend Developer | Full-Stack Web Developer
+    </h2>
+
+    <p className="max-w-2xl text-lg text-gray-600">
+      Final-year Computer Science undergraduate with experience building
+      full-stack web applications using Python, Django, JavaScript,
+      React, HTML, CSS and modern web technologies.
+    </p>
+  </div>
+</div>
+
+        <div className="mt-10 flex justify-center gap-6 flex-wrap">
+          <a
+            href="mailto:baliyanayushi3@gmail.com"
+            className="px-5 py-2 bg-black text-white rounded-lg"
+          >
+            Email Me
+          </a>
+
+          <a
+            href="https://github.com/ayushi-baliyan"
+            target="_blank"
+            className="px-5 py-2 border rounded-lg"
+          >
+            GitHub
+          </a>
+        </div>
+      </section>
+
+      <section className="max-w-5xl mx-auto px-6 py-10">
+        <h2 className="text-3xl font-bold mb-6">Skills</h2>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {[
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "React.js",
+            "Next.js",
+            "Python",
+            "Django",
+            "Git & GitHub",
+          ].map((skill) => (
+            <div
+              key={skill}
+              className="bg-white p-4 rounded-xl shadow text-center"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+              {skill}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="max-w-5xl mx-auto px-6 py-10">
+        <h2 className="text-3xl font-bold mb-6">Projects</h2>
+
+        <div className="bg-white p-6 rounded-xl shadow">
+          <h3 className="text-2xl font-semibold">
+            Digital Heroes Resume Builder
+          </h3>
+
+          <p className="mt-3 text-gray-600">
+            A professional resume builder that helps users create and download
+            resumes quickly with a clean and user-friendly interface.
           </p>
+
+          <div className="mt-5 flex gap-4">
+            <a
+              href="https://digital-heroes-resume-builder.vercel.app/"
+              target="_blank"
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/ayushi-baliyan"
+              target="_blank"
+              className="px-4 py-2 border rounded-lg"
+            >
+              GitHub Profile
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+      </section>
+
+      <section className="max-w-5xl mx-auto px-6 py-10">
+        <h2 className="text-3xl font-bold mb-6">Education</h2>
+
+        <div className="bg-white p-6 rounded-xl shadow">
+          <p className="font-semibold">
+            B.Tech – Computer Science & Engineering
+          </p>
+
+          <p>GLA University, Mathura</p>
+
+          <p className="text-gray-600">2022 – 2026</p>
+        </div>
+      </section>
+
+      <section className="max-w-5xl mx-auto px-6 py-10">
+        <h2 className="text-3xl font-bold mb-6">Contact</h2>
+
+        <div className="bg-white p-6 rounded-xl shadow">
+          <p>Email: baliyanayushi3@gmail.com</p>
+          <p>Phone: +91 7453895745</p>
+
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://github.com/ayushi-baliyan"
             target="_blank"
-            rel="noopener noreferrer"
+            className="text-blue-600"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
+            github.com/ayushi-baliyan
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
