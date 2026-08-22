@@ -191,6 +191,56 @@ export default function Home() {
             </a>
           </div>
         </div>
+                {/* AbleSpace Task Manager */}
+        <div className="bg-white p-6 rounded-xl shadow mt-6">
+          <h3 className="text-2xl font-semibold">
+            AbleSpace Task Manager
+          </h3>
+
+          <p className="mt-3 text-gray-600">
+            A full-stack task management application built with Next.js,
+            React, TypeScript and Tailwind CSS. It provides a clean interface
+            for managing tasks and includes authentication functionality.
+          </p>
+
+          <div className="mt-4 flex flex-wrap gap-2">
+            {[
+              "Next.js",
+              "React",
+              "TypeScript",
+              "Tailwind CSS",
+              "Authentication",
+              "Vercel",
+            ].map((tech) => (
+              <span
+                key={tech}
+                className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-5 flex gap-4 flex-wrap">
+            <a
+              href="https://ablespace-task-manager-ten.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="https://github.com/ayushi-baliyan/ablespace-task-manager"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 border rounded-lg"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* Education */}
