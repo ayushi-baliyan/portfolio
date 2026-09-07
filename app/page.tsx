@@ -241,6 +241,60 @@ export default function Home() {
             </a>
           </div>
         </div>
+        {/* Mini Social Post Application */}
+<div className="bg-white p-6 rounded-xl shadow mt-6">
+  <h3 className="text-2xl font-semibold">
+    Mini Social Post Application
+  </h3>
+
+  <p className="mt-3 text-gray-600">
+    A full-stack social media application where users can sign up and log in,
+    create text and image posts, view a public feed, like/unlike posts and
+    add comments. Built with React.js, Node.js, Express.js, MongoDB and
+    Cloudinary.
+  </p>
+
+  <div className="mt-4 flex flex-wrap gap-2">
+    {[
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Cloudinary",
+      "REST API",
+      "Vercel",
+      "Render",
+    ].map((tech) => (
+      <span
+        key={tech}
+        className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm"
+      >
+        {tech}
+      </span>
+    ))}
+  </div>
+
+  <div className="mt-5 flex gap-4 flex-wrap">
+    <a
+      href="https://mini-social-post-app-one.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-4 py-2 bg-blue-600 text-white rounded-lg"
+    >
+      Live Demo
+    </a>
+
+    <a
+      href="https://github.com/ayushi-baliyan/mini-social-post-app"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="px-4 py-2 border rounded-lg"
+    >
+      GitHub
+    </a>
+  </div>
+</div>
       </section>
 
       {/* Education */}
